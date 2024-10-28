@@ -98,7 +98,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 
 			base_url : {//Where are your images at?
-				image : '/implicit/user/yba/biat/images/'
+				image : 'https://satchmo496.github.io/sounds/'
 			},
 
 			nBlocks : 7, //Can be 5 or 7.
