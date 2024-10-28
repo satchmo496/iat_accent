@@ -1,4 +1,5 @@
 define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) {
+var soundUrl = 'https://satchmo496.github.io/sounds/';
 
 	/**
 	Created by: Yoav Bar-Anan (baranan@gmail.com). Modified by Elad
