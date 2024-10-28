@@ -1,5 +1,5 @@
 define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
-	var soundUrl = '
+	var soundUrl = 'https://satchmo496.github.io/sounds/';
  
 	var API = new APIConstructor();
 		  return stiatExtension({
@@ -61,7 +61,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			},
 
   base_url : {//Where are your images at?
-    image : 'https://baranan.github.io/minno-tasks/images/'
+    image : ''https://satchmo496.github.io/sounds/'
   }}
   );
   });
