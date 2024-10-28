@@ -1,63 +1,180 @@
-define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
-  var soundUrl: 'https://satchmo496.github.io/sounds/';	
-	var API = new APIConstructor();
-		  return stiatExtension({
-		  category : { 
-		    name : 'Black people', //Will appear in the data.
-		    title : {
-		      media : {word : 'Black people'}, //Name of the category presented in the task.
-		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-		      height : 7 //Used to position the "Or" in the combined block.
-		    }, 
-		    media : [ //Stimuli content as PIP's media objects
-    		  {word: '...',sound: soundUrl + 'test1_AM.wav'},
-          {word: '...',sound: soundUrl + 'test1_AM.wav'}     			
-    		], 
-		    //Stimulus css (style)
-		    css : {color:'#31b404','font-size':'3em'}
-		  },	
+define(['/implicit/user/bkurdi/nword1/iatsound_extension.js'], function(iatExtension){
+	var soundUrl = '/implicit/user/bkurdi/nword1/sounds/';
 
-  		attribute1 : 
-			{
-			name : 'Unpleasant', //Attribute label
+	return iatExtension({
+		category1 : 
+		{
+			name : 'Nigga', 
 			title : {
-				media : {word : 'Negative'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-				height : 7 //Used to position the "Or" in the combined block.
+				media : {word : 'Nigga'}, 
+				css : {color:'#31b404','font-size':'2em'}, 
+				height : 4 //Used to position the "Or" in the combined block.
 			}, 
-			media : [ //Stimuli
-				{word: 'Bomb'},
-				{word: 'Abuse'},
-				{word: 'Sadness'},
-				{word: 'Pain'},
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: '...',sound: soundUrl + 'bmv2.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bmv3.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bmv4.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bmv5.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bmv7.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bmv8.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bwv1.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bwv4.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bwv5.nigga.mp3'},
+				{word: '...',sound: soundUrl + 'bwv7.nigga.mp3'}
+
+
+			], 
+			//Stimulus css
+			stimulusCss : {color:'#31b404','font-size':'1.8em'} 
+		},
+		category2 : 
+		{
+			name : 'Nigger', 
+			title : {
+				media : {word : 'Nigger'}, 
+				css : {color:'#31b404','font-size':'2em'}, 
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: '...',sound: soundUrl + 'bmv2.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bmv3.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bmv4.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bmv5.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bmv7.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bmv8.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bwv1.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bwv4.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bwv5.nigger.mp3'},
+				{word: '...',sound: soundUrl + 'bwv7.nigger.mp3'}
+
+
+			], 
+			//Stimulus css
+			stimulusCss : {color:'#31b404','font-size':'1.8em'} 
+		},
+		attribute2 :	{
+			name : 'Good', //Will appear in the data.
+			title : {
+				media : {word: 'Good'}, //Name of the category presented in the task.
+				css : {color:'#0000FF','font-size':'2em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'Angel'},
+				{word: 'Beauty'},
+				{word: 'Delight'},
+				{word: 'Enjoy'},
+				{word: 'Flower'},
+				{word: 'Lovely'},
+				{word: 'Merry'},
+				{word: 'Peaceful'},
+				{word: 'Success'}
+			], 
+			//Stimulus css
+			stimulusCss : {color:'#0000FF','font-size':'1.8em'}
+		},
+		attribute1 : {
+			name : 'Bad', //Will appear in the data.
+			title : {
+				media : {word: 'Bad'}, //Name of the category presented in the task.
+				css : {color:'#0000FF','font-size':'2em'}, //Style of the category title.
+				height : 4 //Used to position the "Or" in the combined block.
+			}, 
+			stimulusMedia : [ //Stimuli content as PIP's media objects
+				{word: 'Awful'},
+				{word: 'Bitter'},
+				{word: 'Disgust'},
+				{word: 'Evil'},
+				{word: 'Failure'},
+				{word: 'Lousy'},
+				{word: 'Maggot'},
 				{word: 'Poison'},
-				{word: 'Grief'}
+				{word: 'Stinky'}	
 			], 
-			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
-			},
-		attribute2 : 
-			{
-			name : 'Pleasant', //Attribute label
-			title : {
-				media : {word : 'Positive'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-				height : 7 //Used to position the "Or" in the combined block.
-			}, 
-			media : [ //Stimuli
-				{word: 'Paradise'},
-				{word: 'Pleasure'},
-				{word: 'Cheer'},
-				{word: 'Wonderful'},
-				{word: 'Splendid'},
-				{word: 'Love'}
-			], 
-			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
-			},
+			//Stimulus css (style)
+			stimulusCss : {color:'#0000FF','font-size':'1.8em'}
+		},	
 
-  base_url : {//Where are your images at?
-    image : 'https://baranan.github.io/minno-tasks/images/'
-  }}
-  );
-  });
+
+		////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
+	    nBlocks : 5, //Can be 5 or 7.
+			////In each block, we can include a number of mini-blocks, to reduce repetition of same group/response.
+		blockAttributes_nTrials : 20,
+		blockAttributes_nMiniBlocks : 5,
+		blockCategories_nTrials : 20,
+		blockCategories_nMiniBlocks : 5,
+		blockFirstCombined_nTrials : 20,
+		blockFirstCombined_nMiniBlocks : 5,
+		blockSecondCombined_nTrials : 40, //Not used if nBlocks=5.
+		blockSecondCombined_nMiniBlocks : 10, //Not used if nBlocks=5.
+		blockSwitch_nTrials : 20,
+		blockSwitch_nMiniBlocks : 5,
+
+		fb_strong_Att1WithCatA_Att2WithCatB : 'Your data suggest strong automatic preference for categoryB over categoryA.',
+		fb_moderate_Att1WithCatA_Att2WithCatB : 'Your data suggest moderate automatic preference for categoryB over categoryA.',
+		fb_slight_Att1WithCatA_Att2WithCatB : 'Your data suggest weak automatic preference for categoryB over categoryA.',
+		fb_equal_CatAvsCatB : 'Your data suggest no automatic preference between categoryA and categoryB.',
+
+		fontColor : '#000000', //The default color used for printed messages.
+
+		//Instructions text.
+		// You can use the following variables and they will be replaced by 
+		// the name of the categories and the block's number variables:
+		// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
+		// Notice that this is HTML text.
+		instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+			'Press the <b>E</b> key when you see <font color="#0000ff">leftAttribute.</font> words.' + 
+			'<br/>Press the <b>I</b> key when you see <font color="#0000ff">rightAttribute</font> words.<br/><br/>' + 
+			'If a red <font color="#ff0000"><b>X</b></font> appears press the other key. ' +  
+			'<u>Go as fast as you can</u>.<br/><br/>'+
+			'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+		instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+			'Press the <b>E</b> key when you hear <font color="#31b404">leftCategory</font> words. ' + 
+			'<br/>Press the <b>I</b> key when you hear <font color="#31b404">rightCategory</font> words.<br/>' + 
+			'You will hear the words one at a time.<br/><br/>' + 
+			'If a red <font color="#ff0000"><b>X</b></font> appears press the other key. ' + 
+			'<u>Go as fast as you can</u>.<br/><br/>'+
+			'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+		instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+			'Press the <b>E</b> key when you hear <font color="#31b404">leftCategory</font> and see <font color="#0000ff">leftAttribute</font> words.<br/>' + 
+			'Press the <b>I</b> key when you hear <font color="#31b404">rightCategory</font> and see <font color="#0000ff">rightAttribute</font> words.<br/>' + 
+			'If a red <font color="#ff0000"><b>X</b></font> appears press the other key.' + 
+			' <u>Go as fast as you can</u>.<br/><br/>' + 
+			'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+		instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+			'This is the same as the last part.<br/>' + 
+			'Press the <b>E</b> key when you hear <font color="#31b404">leftCategory</font> and see <font color="#0000ff">leftAttribute</font> words.<br/>' + 
+			'Press the <b>I</b> key when you hear <font color="#31b404">rightCategory</font> and see <font color="#0000ff">rightAttribute</font> words.<br/>' + 
+			'<u>Go as fast as you can</u>.<br/><br/>' + 
+			'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+		instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' + 
+			'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' + 
+			'<b>Watch out, the labels have changed position!</b><br/>' + 
+			'Press the <b>E</b> key when you hear <font color="#31b404">leftCategory</font> words.<br/>' + 
+			'Press the <b>I</b> key when you hear <font color="#31b404">rightCategory</font> words.<br/><br/>' + 
+			'<u>Go as fast as you can.</u><br/><br/>' + 
+			'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>', 
+
+		canvas : {
+			maxWidth: 725,
+			proportions : 0.7,
+			background: '#ffffff',
+			borderWidth: 5,
+			canvasBackground: '#ffffff',
+			borderColor: 'lightblue'
+		},
+
+		base_url : {//Where are your images at?
+			image : '/implicit/user/bkurdi/nword1/sounds/'
+		} 
+	});
+});
